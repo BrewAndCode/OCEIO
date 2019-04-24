@@ -21,7 +21,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
 
-version = "${minecraft_version}-1.0.001"
+version = "${minecraft_version}-1.0.002"
 group = "com.brewingcoder.oceio"
 archivesBaseName = "oceio"
 
@@ -53,10 +53,12 @@ repositories {
     maven { url = "modmaven.k-4u.nl"}
     mavenLocal()
 }
+//deobfCompile  "com.enderio.core:EnderCore:${mc_version}-0.5.50:deobf"
+//compile files("libs\\EnderCore-1.12.2-0.5.57-deobf.jar")
 dependencies {
-    deobfCompile  "com.enderio.core:EnderCore:${mc_version}-+:deobf"
+    deobfCompile   "com.enderio.core:EnderCore:1.12.2-0.5.48"
     compile       "li.cil.oc:OpenComputers:MC1.12.2-1.7.4.153"
-    compile       "com.enderio:EnderIO:${mc_version}-5.0.40"
+    compile       "com.enderio:EnderIO:${mc_version}-5.0.43"
     compile       "info.loenwind.autoconfig:AutoConfig:${mc_version}-1.0.1"
     compile       "info.loenwind.autosave:AutoSave:${mc_version}-1.0.10"
     deobfProvided "mezz.jei:jei_${mc_version}:${jei_version}:api"

@@ -15,6 +15,31 @@ connected to and not the entire array of capacitors.
 
 ## Supported Devices ##
 
+### Ender IO Power Conduit with Capacitor Bank on same conduit line ###
+
+This works the same way the EnderIO Power monitors do.  It requires that you use an EnderIO power conduit
+of any tier, and have that conduit attached to an EnderIO capacitor or array of capacitors.
+
+The conduit will not attach to the Adapter, simply make sure the adapter is in an adjacent block.
+
+**Make sure that you check the doesBundleContainPowerConduit() method first to ensure that the bundle 
+still has a power conduit in it, otherwise the API will fail, albeit gracefully. (hopefully)**
+
+-  **doesBundleContainPowerConduit**=function():bool; Returns true if the bundle contains a power conduit,
+-  **getAverageInputPerTick**=function():number; Returns the average input per Tick,
+-  **getAverageOutputPerTick**=function():number; Returns the average output per tick across this conduit bundle,
+-  **getBundleConduits**=function():table -- Returns a table of all conduits in bundle,
+-  **getCurrentEnergyStored**=function():number; Returns Current Energy Stored,
+-  **getExtractionRedstoneMode**=function(string EnumFacing) : string - redstone control mode for given side of power conduit,
+-  **getIntegrationProvider**=function():string;  -- Returns name of mod providing integration. Used for validation that mod is installed prior to calling these functions.,
+-  **getMaxEnergyStored**=function():number; Returns Max Energy Stored,
+-  **getMaxPowerInConduits**=function():number; Returns the maximum power that can reside in the conduits,
+-  **getMaxPowerInReceptors**=function():number; Returns the maximum power that can reside in power receptors on this network,
+-  **getPowerInConduits**=function():number; Returns the current power stored in the conduits,
+-  **getPowerInReceptors**=function():number; Returns the current power stored in the receptors,
+-  **setExtractionRedstoneMode**=function(string RedstoneControlMode, string EnumFacing): {number theResult, string message} sets redstone control mode for given face,
+
+
 ### Ender IO Capacitor Banks ###
 
 capacitor banks will be exposed as [capacitorlevel]_capbank. example:  vibrant_capbank
