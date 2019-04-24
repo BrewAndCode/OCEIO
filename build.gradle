@@ -24,7 +24,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 if(System.getenv('BUILD_NUMBER') != null)
     project.buildnumber = System.getenv('BUILD_NUMBER')
 
-version = ${mod_version}.${buidnumber}
+version = ${mod_version}
 group = "com.brewingcoder.oceio"
 archivesBaseName = "oceio"
 
