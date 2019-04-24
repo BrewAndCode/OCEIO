@@ -1,0 +1,16 @@
+[
+{
+  "modid": "eioocshim",
+  "name": "EnderIO OpenComputer shim",
+  "description": "Provides OpenComputer integration with EnderIO Capacity Banks.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["BrewingCoder"],
+  "credits": "The Academy...",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
