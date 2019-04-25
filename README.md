@@ -15,7 +15,9 @@ connected to and not the entire array of capacitors.
 
 ## Supported Devices ##
 
-### Ender IO Power Conduit with Capacitor Bank on same conduit line ###
+Conduits are not yet in the published version on CurseForge!
+
+~~### Ender IO Power Conduit with Capacitor Bank on same conduit line ###
 
 This works the same way the EnderIO Power monitors do.  It requires that you use an EnderIO power conduit
 of any tier, and have that conduit attached to an EnderIO capacitor or array of capacitors.
@@ -37,7 +39,7 @@ still has a power conduit in it, otherwise the API will fail, albeit gracefully.
 -  **getMaxPowerInReceptors**=function():number; Returns the maximum power that can reside in power receptors on this network,
 -  **getPowerInConduits**=function():number; Returns the current power stored in the conduits,
 -  **getPowerInReceptors**=function():number; Returns the current power stored in the receptors,
--  **setExtractionRedstoneMode**=function(string RedstoneControlMode, string EnumFacing): {number theResult, string message} sets redstone control mode for given face,
+-  **setExtractionRedstoneMode**=function(string RedstoneControlMode, string EnumFacing): {number theResult, string message} sets redstone control mode for given face,~~
 
 
 ### Ender IO Capacitor Banks ###

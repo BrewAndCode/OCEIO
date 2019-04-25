@@ -54,7 +54,7 @@ public class DriverConduit extends EIODriver<TileConduitBundle> {
 
         private PowerTracker GetNetworkPowerTracker(){
             NetworkPowerManager pm = GetNetworkPowerManager();
-            return  pm.getNetworkPowerTracker();
+            return pm != null ? pm.getNetworkPowerTracker() : null;
         }
 
         @Callback (doc="function(string EnumFacing) : string - redstone control mode for given side of power conduit")

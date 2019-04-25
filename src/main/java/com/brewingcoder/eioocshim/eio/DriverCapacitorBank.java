@@ -24,7 +24,8 @@ public class DriverCapacitorBank extends EIODriver<TileCapBank> {
         if (tile.getType() == CapBankType.SIMPLE) {name = "simple_capbank";}
         else if (tile.getType() == CapBankType.VIBRANT) {name= "vibrant_capbank";}
         else if (tile.getType() == CapBankType.CREATIVE) {name="creative_capbank";}
-        else {name=tile.getType().toString();}
+        else if (tile.getType() == CapBankType.ACTIVATED) {name="activated_capbank";}
+        else {name="unknown_capbank";}
 
         return new Env(tile,side,name);
     }
